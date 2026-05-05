@@ -382,6 +382,199 @@ footer {
   color: var(--text-primary);
 }
 
+/* How It Works Section */
+.how-it-works {
+  padding: 80px 64px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.section-subtitle {
+  color: var(--text-secondary);
+  font-size: 1.25rem;
+  margin-top: 16px;
+}
+
+.steps-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 32px;
+  margin-top: 48px;
+}
+
+.step-card {
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  padding: 40px;
+  border-radius: 24px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
+.step-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(255,255,255,0.2);
+}
+
+.step-number {
+  font-size: 6rem;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.05);
+  position: absolute;
+  top: -10px;
+  right: 20px;
+  line-height: 1;
+}
+
+.step-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  position: relative;
+  z-index: 1;
+}
+
+/* Benefits Section */
+.benefits {
+  padding: 120px 64px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.benefits-container {
+  display: flex;
+  align-items: center;
+  gap: 64px;
+}
+
+.benefit-content {
+  flex: 1;
+}
+
+.benefit-content h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin-bottom: 24px;
+  line-height: 1.2;
+}
+
+.benefit-list {
+  list-style: none;
+  margin-top: 32px;
+}
+
+.benefit-list li {
+  margin-bottom: 24px;
+  font-size: 1.125rem;
+  color: var(--text-secondary);
+  position: relative;
+  padding-left: 32px;
+}
+
+.benefit-list li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  font-weight: bold;
+}
+
+.benefit-list strong {
+  color: var(--text-primary);
+}
+
+.benefit-visual {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.glass-panel {
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 1;
+  background: linear-gradient(135deg, rgba(94, 43, 255, 0.2), rgba(255, 59, 48, 0.1));
+  border-radius: 48px;
+  border: 1px solid var(--glass-border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.glass-panel::before {
+  content: '';
+  position: absolute;
+  inset: -1px;
+  border-radius: 48px;
+  padding: 1px;
+  background: linear-gradient(to bottom right, rgba(255,255,255,0.2), rgba(255,255,255,0));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.stat-circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: var(--bg-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 24px 48px rgba(0,0,0,0.5);
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.stat-number {
+  font-size: 4rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--primary-light), var(--highlight-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 1;
+}
+
+.stat-label {
+  color: var(--text-secondary);
+  font-weight: 500;
+  margin-top: 8px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 0.875rem;
+}
+
+/* CTA Section */
+.cta-section {
+  padding: 120px 64px;
+  text-align: center;
+  background: linear-gradient(to top, rgba(94, 43, 255, 0.1), transparent);
+  margin-top: 64px;
+  border-top: 1px solid var(--glass-border);
+}
+
+.cta-section h2 {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin-bottom: 16px;
+}
+
+.cta-section p {
+  color: var(--text-secondary);
+  font-size: 1.25rem;
+  margin-bottom: 40px;
+}
+
+.cta-btn {
+  padding: 16px 32px;
+  font-size: 1.125rem;
+}
+
 /* Keyframes */
 @keyframes fadeUp {
   from {
@@ -407,10 +600,13 @@ footer {
   .hero-title {
     font-size: 3.5rem;
   }
+  .benefits-container {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 768px) {
-  .navbar, .hero, .features, footer {
+  .navbar, .hero, .features, .how-it-works, .benefits, .cta-section, footer {
     padding-left: 24px;
     padding-right: 24px;
   }
