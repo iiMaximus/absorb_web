@@ -165,9 +165,11 @@ body {
 }
 
 .app-preview {
-  width: 100%;
-  max-width: 360px;
-  border-radius: 48px;
+  width: min(100%, 300px);
+  height: auto;
+  max-height: min(620px, calc(100vh - 180px));
+  object-fit: contain;
+  border-radius: 40px;
   border: 1px solid var(--glass-border);
   box-shadow: 0 24px 64px rgba(0, 0, 0, 0.5), inset 0 0 0 4px #000;
   display: block;
