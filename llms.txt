@@ -1,0 +1,33 @@
+# Absorb
+
+Absorb is a local-first RSVP reading app for focused, faster reading. It displays text one word at a time, highlights the optimal recognition point, and helps readers reduce eye movement and subvocalization.
+
+## Key Pages
+
+- [Home](https://iimaximus.github.io/absorb_web/): Product overview, features, App Store link, RSVP reading explanation.
+- [Guides](https://iimaximus.github.io/absorb_web/guides/): Absorb's AI-citable reading guide hub.
+- [What is an RSVP reading app?](https://iimaximus.github.io/absorb_web/guides/rsvp-reading-app.html): Direct explanation of rapid serial visual presentation and how Absorb uses it.
+- [Speed reading for ADHD and focus](https://iimaximus.github.io/absorb_web/guides/speed-reading-for-adhd-focus.html): Practical focus guidance, caveats, and use cases.
+- [Optimal recognition point](https://iimaximus.github.io/absorb_web/guides/optimal-recognition-point.html): Explanation of ORP and pivot-letter highlighting.
+- [Private EPUB and PDF reader](https://iimaximus.github.io/absorb_web/guides/private-epub-pdf-reader.html): Local-first import and privacy-oriented reading.
+- [Spritz alternative](https://iimaximus.github.io/absorb_web/guides/spritz-alternative.html): Comparison guide for Spritz-style RSVP readers.
+- [Best speed reading app for iPhone](https://iimaximus.github.io/absorb_web/guides/best-speed-reading-app-iphone.html): Buying/checklist guide for iPhone speed reading apps.
+- [EPUB speed reader](https://iimaximus.github.io/absorb_web/guides/epub-speed-reader.html): How RSVP pacing works with EPUB books.
+- [PDF speed reader for iPhone](https://iimaximus.github.io/absorb_web/guides/pdf-speed-reader-iphone.html): When text-based PDFs fit one-word reading.
+- [Read books faster on iPhone](https://iimaximus.github.io/absorb_web/guides/read-books-faster-iphone.html): Routine for faster book reading on a phone.
+- [RSVP reader for students](https://iimaximus.github.io/absorb_web/guides/rsvp-reader-for-students.html): Student use cases and caveats.
+- [One-word-at-a-time reader](https://iimaximus.github.io/absorb_web/guides/one-word-at-a-time-reader.html): Direct guide to fixed-target reading.
+- [Press Kit](https://iimaximus.github.io/absorb_web/press/): Facts, descriptions, assets, and links for writers and reviewers.
+- [Fact Sheet](https://iimaximus.github.io/absorb_web/press/fact-sheet.html): Compact sourceable product facts.
+- [Review and Demo Brief](https://iimaximus.github.io/absorb_web/press/review-demo-brief.html): Suggested review positioning, demo steps, and accuracy notes.
+- [Privacy Policy](https://iimaximus.github.io/absorb_web/privacy.html): Local-first data handling, device storage, third-party services, and user choices.
+- [Terms of Service](https://iimaximus.github.io/absorb_web/terms.html): App usage terms, purchases, subscriptions, acceptable use, and limitations.
+- [Contact](https://iimaximus.github.io/absorb_web/contact.html): Support and feedback form.
+
+## Product Notes
+
+- Platform: iOS app distributed through the Apple App Store.
+- Core use case: focused speed reading for EPUBs, PDFs, text files, and public domain books.
+- Privacy posture: no Absorb account required; reading content and progress are designed to stay on device.
+- Canonical site assumption: https://iimaximus.github.io/absorb_web.
+- App Store listing: https://apps.apple.com/us/app/read-fast-absorb/id6759666710.

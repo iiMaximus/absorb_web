@@ -1,0 +1,22 @@
+# Canonical URL assumption: GitHub Pages for iiMaximus/absorb_web.
+# If Absorb launches on a custom domain, update this file and sitemap.xml.
+
+User-agent: Googlebot
+User-agent: Bingbot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: ClaudeBot
+User-agent: Claude-User
+User-agent: Claude-SearchBot
+User-agent: Applebot
+User-agent: Applebot-Extended
+User-agent: CCBot
+User-agent: GPTBot
+User-agent: *
+Allow: /
+Disallow: /PRIVACY_POLICY.md
+Disallow: /TERMS_OF_SERVICE.md
+
+Sitemap: https://iimaximus.github.io/absorb_web/sitemap.xml

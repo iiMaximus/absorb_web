@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const msPerWord = Math.floor(60000 / baseWpm);
 
   // Helper to find Optimal Recognition Point (ORP)
-  function getORPIndex(word length) {
+  function getORPIndex(length) {
     if (length <= 1) return 0;
     if (length >= 2 && length <= 5) return 1;
     if (length >= 6 && length <= 9) return 2;
