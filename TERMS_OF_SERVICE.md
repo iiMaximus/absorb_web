@@ -1,18 +1,24 @@
 # Terms of Service
 
-Last updated: April 15, 2026
+Last updated: May 28, 2026
 
 ## Agreement
 
 These Terms of Service govern your use of Absorb. By using the app, you agree to these terms. If you do not agree, do not use the app.
 
-These terms apply in addition to Apple's standard terms for apps distributed through the App Store, including the Apple Media Services Terms and Apple's Standard End User License Agreement, unless Absorb provides a separate custom EULA in App Store Connect.
+These terms apply in addition to Apple's standard terms for apps distributed through the App Store and Google's standard terms for apps distributed through Google Play, unless Absorb provides separate custom terms through the relevant store.
 
 ## Use of the app
 
 Absorb provides reading tools, including focused reading modes, reading preferences, progress tracking, vocabulary saving, public domain book access, and local document import.
 
 You are responsible for the files you import and for making sure you have the right to store and read them in the app. Do not use Absorb to violate copyright, trademark, privacy, publicity, or other rights.
+
+## Analytics and product improvement
+
+Absorb may collect product analytics through PostHog as described in the Privacy Policy. Analytics help us understand onboarding, feature usage, reading-session behavior, purchase-flow performance, and app health so we can improve the app.
+
+Do not include sensitive personal information in book titles, file names, or other user-controlled metadata if you do not want that metadata to appear in app records or analytics events described in the Privacy Policy.
 
 ## Public domain and third-party content
 
@@ -22,19 +28,19 @@ Absorb does not guarantee that any particular public domain work is free to use 
 
 ## Purchases, lifetime access, and subscriptions
 
-Absorb may offer paid features, subscriptions, lifetime access, or other in-app purchases. Purchases are processed by Apple through your Apple ID and may be validated through RevenueCat.
+Absorb may offer paid features, subscriptions, lifetime access, or other in-app purchases. Purchases are processed by Apple or Google through your store account and may be validated through RevenueCat.
 
-Before you purchase, the app or App Store purchase sheet will show the product, duration, price, and included access. Paid access unlocks the features described at the time of purchase, subject to these terms and App Store rules.
+Before you purchase, the app or store purchase sheet will show the product, duration, price, and included access. Paid access unlocks the features described at the time of purchase, subject to these terms and store rules.
 
-Auto-renewable subscriptions renew automatically unless canceled at least 24 hours before the end of the current billing period. Your Apple ID is charged according to Apple's subscription terms. You can manage or cancel subscriptions in your Apple ID subscription settings.
+Auto-renewable subscriptions renew automatically unless canceled at least 24 hours before the end of the current billing period. Your store account is charged according to the applicable App Store or Google Play subscription terms. You can manage or cancel subscriptions in your store subscription settings.
 
-Canceling a subscription stops future renewals but does not automatically refund the current billing period. Refund requests are handled by Apple. Lifetime access, if offered, means access to the paid features for the lifetime of the app as made available by the developer, subject to technical, legal, and platform limitations.
+Canceling a subscription stops future renewals but does not automatically refund the current billing period. Refund requests are handled by Apple or Google. Lifetime access, if offered, means access to the paid features for the lifetime of the app as made available by the developer, subject to technical, legal, and platform limitations.
 
 If paid features change over time, we will not intentionally remove access to features you have already paid for without a reasonable replacement or as required by law, platform rules, security, or technical necessity.
 
 ## Restore purchases
 
-Absorb provides a restore purchase option for restorable App Store purchases. To restore access, use the same Apple ID that made the purchase.
+Absorb provides a restore purchase option for restorable App Store and Google Play purchases. To restore access, use the same store account that made the purchase.
 
 ## No professional advice
 
@@ -63,4 +69,3 @@ We may update these terms when the app, business model, or legal requirements ch
 ## Contact
 
 For support or questions about these terms, contact the developer through the support channel listed on the App Store product page.
-

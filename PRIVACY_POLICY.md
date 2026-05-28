@@ -1,12 +1,12 @@
 # Privacy Policy
 
-Last updated: April 15, 2026
+Last updated: May 28, 2026
 
 ## Overview
 
 Absorb is a local-first reading app. The app is designed to help you read public domain books and your own imported documents without creating an Absorb account.
 
-We do not sell personal information. We do not include advertising SDKs. We do not use your reading content for tracking or advertising. We do not operate an Absorb backend that receives your reading activity.
+We do not sell personal information. We do not include advertising SDKs. We do not use your reading content for advertising. Absorb uses limited product analytics, described below, to understand onboarding, feature usage, purchases, and app performance.
 
 ## Information stored on your device
 
@@ -19,7 +19,7 @@ Absorb stores the following information locally on your device so the app can wo
 - Imported book metadata, imported book text, and imported book cover images when available.
 - Purchase entitlement status cached by the purchase SDK, if purchases are enabled.
 
-Imported EPUB, TXT, and supported text-based PDF files are processed and saved locally. Absorb does not intentionally upload imported book content, saved vocabulary, or reading progress to an Absorb server.
+Imported EPUB, TXT, and supported text-based PDF files are processed and saved locally. Absorb does not intentionally upload imported book content, saved note text, saved vocabulary words, or saved definitions to an Absorb server. Limited reading-session metadata and product usage analytics may be sent to PostHog as described below. If you choose to use online dictionary lookup, the selected word is sent to the dictionary provider described below.
 
 Local app data may be included in device backups depending on your device and operating system settings. Deleting the app or clearing app data may remove local data from the device.
 
@@ -27,21 +27,27 @@ Local app data may be included in device backups depending on your device and op
 
 Absorb uses third-party services only where needed for app functionality:
 
-- Apple processes App Store downloads, in-app purchases, subscriptions, refunds, diagnostics, and crash reports according to your Apple ID, device settings, and Apple's policies.
+- Apple and Google process App Store and Google Play downloads, in-app purchases, subscriptions, refunds, diagnostics, and crash reports according to your store account, device settings, and their policies.
 - RevenueCat may process an anonymous app user ID, purchase history, product identifiers, transaction status, entitlement status, device and app information, IP address, and related technical logs so Absorb can unlock paid features, check subscription status, restore purchases, and present purchase management screens. Absorb does not receive your full payment card details.
+- PostHog may process an anonymous analytics identifier, device and app information, app lifecycle events, screen views, selected touch interaction metadata, IP address, and technical logs so Absorb can understand app usage and improve the product. Absorb sends product analytics such as onboarding progress and answers, referral/source selections, notification choices, paywall and purchase-flow events, feature usage, book import/download/remove events, reading session start/pause/completion events, reading speed, progress percentage, book type, book identifiers, titles, authors, imported file names, and word counts. Absorb does not intentionally send imported book text, saved note text, saved vocabulary words, saved definitions, or full payment card details to PostHog.
 - Project Gutenberg or related public book sources may receive standard technical information, such as your IP address and user agent, when you choose to download a public domain book.
+- Free Dictionary API at `api.dictionaryapi.dev` may receive the selected word and standard technical information, such as your IP address and user agent, when you choose to look up a word definition.
 
 Absorb does not use these services to track you across apps or websites owned by other companies.
 
-## App Store privacy disclosures
+## Store privacy disclosures
 
-If RevenueCat purchases are enabled, the App Store privacy answers should disclose data collected by third-party partners for app functionality, including purchase information and an app user ID or device-related identifiers used to manage entitlements. The exact App Store Connect answers must match the version of the app submitted and any third-party SDKs included in that build.
+If RevenueCat purchases are enabled, the App Store privacy answers should disclose data collected by third-party partners for app functionality, including purchase information and an app user ID or device-related identifiers used to manage entitlements.
 
-If a submitted build does not include RevenueCat or any other SDK that transmits data off-device, the App Store privacy answers may be different. You are responsible for keeping App Store Connect privacy answers accurate whenever the app changes.
+If PostHog analytics are enabled, the App Store privacy answers should disclose usage data and product interaction data collected for analytics and product improvement, along with any app identifiers, device information, diagnostics, or other technical information included in analytics events. The exact App Store Connect and Play Console answers must match the version of the app submitted and any third-party SDKs included in that build.
+
+If a submitted build does not include RevenueCat, PostHog, or any other SDK that transmits data off-device, the store privacy answers may be different. You are responsible for keeping App Store Connect and Play Console privacy answers accurate whenever the app changes.
 
 ## Analytics, ads, and tracking
 
-Absorb does not currently include a separate analytics service in the app code. Absorb does not include advertising SDKs and does not request permission to track you across other companies' apps or websites.
+Absorb uses PostHog for product analytics when analytics are configured in the app build. PostHog analytics help us understand onboarding drop-off, feature usage, reading-session behavior, purchase-flow performance, and app health so we can improve Absorb.
+
+Absorb does not include advertising SDKs, does not sell analytics data, does not use analytics for third-party advertising, and does not request permission to track you across other companies' apps or websites. Absorb does not enable PostHog session replay in the current app configuration.
 
 ## Data retention
 
@@ -49,13 +55,17 @@ Local reading data stays on your device until you delete it in the app, clear ap
 
 Purchase and subscription records are retained by Apple and RevenueCat as needed to provide purchases, restore access, prevent fraud, comply with legal obligations, and maintain business records. Retention by third-party services is governed by their own policies.
 
+PostHog analytics records are retained according to the PostHog project settings and PostHog policies unless deleted earlier.
+
 ## Your choices and deletion
 
-You can remove imported books, downloaded books, saved vocabulary, and app settings from within the app where available, or by deleting the app from your device.
+You can remove imported books, downloaded books, saved vocabulary, and app settings from within the app where available, or by deleting the app from your device. Removing an imported book deletes Absorb's local copy, but not the original file you selected from your device.
 
-Subscriptions, refunds, and billing changes are managed through your Apple ID and the App Store. You can cancel an auto-renewable subscription in your Apple ID subscription settings.
+Subscriptions, refunds, and billing changes are managed through your App Store or Google Play account. You can cancel an auto-renewable subscription in your store subscription settings.
 
-For privacy requests related to Absorb, contact the developer through the support channel listed on the App Store product page. For data held by Apple or RevenueCat, you may also need to use the privacy tools or support channels provided by those services.
+Deleting the app stops future analytics collection from that installation, but it may not automatically delete analytics records already processed by PostHog. Because Absorb does not require an account, privacy requests for analytics data may require information that helps locate the anonymous analytics identifier.
+
+For privacy requests related to Absorb, contact the developer through the support channel listed on the App Store product page. For data held by Apple, Google, RevenueCat, PostHog, or other third-party services, you may also need to use the privacy tools or support channels provided by those services.
 
 ## Children
 
@@ -67,7 +77,7 @@ Absorb relies on the security protections provided by your device operating syst
 
 ## International users
 
-Third-party services used for purchases, diagnostics, and public book downloads may process information in countries other than your own. By using Absorb, you understand that information may be processed where those services operate.
+Third-party services used for purchases, analytics, diagnostics, and public book downloads may process information in countries other than your own. By using Absorb, you understand that information may be processed where those services operate.
 
 ## Changes
 
@@ -76,4 +86,3 @@ We may update this policy when the app changes, including when subscriptions, an
 ## Contact
 
 For privacy questions, contact the developer through the support channel listed on the App Store product page.
-
