@@ -1,6 +1,6 @@
 # Terms of Service
 
-Last updated: May 28, 2026
+Last updated: May 30, 2026
 
 ## Agreement
 
@@ -16,9 +16,15 @@ You are responsible for the files you import and for making sure you have the ri
 
 ## Analytics and product improvement
 
-Absorb may collect product analytics through PostHog as described in the Privacy Policy. Analytics help us understand onboarding, feature usage, reading-session behavior, purchase-flow performance, and app health so we can improve the app.
+Absorb may collect product analytics through PostHog and install/deep-link attribution through ChottuLink as described in the Privacy Policy. Analytics and attribution help us understand onboarding, feature usage, reading-session behavior, purchase-flow performance, app health, and which marketing links lead to app downloads so we can improve the app.
 
 Do not include sensitive personal information in book titles, file names, or other user-controlled metadata if you do not want that metadata to appear in app records or analytics events described in the Privacy Policy.
+
+## Links and attribution
+
+Absorb may use dynamic links, app links, universal links, or similar link technology to open parts of the app, measure campaign performance, or attribute app installs to marketing links.
+
+Third-party platforms, websites, and social media services that show or distribute Absorb links are not controlled by Absorb. Their own terms and privacy policies apply to your use of those services.
 
 ## Public domain and third-party content
 
