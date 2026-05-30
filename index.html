@@ -109,39 +109,55 @@
 <body>
 
   <nav class="navbar">
-    <a href="./" class="logo">
+    <a href="./" class="logo" aria-label="Absorb home">
       <img src="assets/logo.jpeg" alt="Absorb RSVP reading app logo" class="brand-logo" width="32" height="32" />
-      Absorb
+      <span class="logo-word">ab<span>sor</span>b</span>
     </a>
     <div class="nav-links">
       <a href="#features">Features</a>
       <a href="#how-it-works">How it works</a>
       <a href="#learn">Guides</a>
+      <a href="press/">Press</a>
+      <a href="#faq">FAQ</a>
       <a href="privacy.html">Privacy</a>
       <a href="contact.html">Contact</a>
+      <a class="nav-download" href="https://apps.apple.com/us/app/read-fast-absorb/id6759666710#information" target="_blank" rel="noopener noreferrer">Download</a>
     </div>
   </nav>
 
   <section class="hero">
     <div class="hero-content">
+      <p class="hero-badge"><span></span>Now on the App Store · iPhone</p>
       <h1 class="hero-title">
-        Read Books at the <br />
-        <span class="text-gradient">Speed of Thought.</span>
+        Read books at the <br />
+        speed of <span class="text-gradient">thought</span>.
       </h1>
       <p class="hero-subtitle">
         Absorb is an iPhone RSVP reader that helps you focus on one word at a time, highlight the optimal recognition point, and read EPUB, PDF, and TXT books with less visual scanning.
       </p>
+    </div>
+
+    <div class="hero-visual" aria-label="Live RSVP reader demo">
+      <div class="reader-word" id="rsvp-word" aria-live="polite"></div>
+      <div class="reader-controls">
+        <input id="speed-slider" class="reader-slider" type="range" min="150" max="800" step="10" value="450" aria-label="Words per minute" />
+        <div class="reader-speed-labels">
+          <span>150 WPM</span>
+          <span id="wpm-label">450 WPM</span>
+          <span>800 WPM</span>
+        </div>
+        <button id="play-btn" class="reader-toggle" type="button">Pause</button>
+      </div>
+    </div>
+
+    <div class="hero-actions">
       <a href="https://apps.apple.com/us/app/read-fast-absorb/id6759666710#information" class="btn-primary" aria-label="Download on the App Store" target="_blank" rel="noopener noreferrer">
         <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
           <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13.12 7.3c.75-.92 1.25-2.19 1.11-3.46-1.08.04-2.41.72-3.19 1.64-.7.83-1.29 2.12-1.13 3.37 1.2.09 2.45-.63 3.21-1.55z"></path>
         </svg>
-        App Store
+        Download on App Store
       </a>
-    </div>
-
-    <!-- App Preview -->
-    <div class="hero-visual">
-      <img src="assets/preview.gif" alt="Absorb iPhone app preview showing one-word-at-a-time RSVP reading" class="app-preview" width="800" height="1496" />
+      <p>Adjustable 150-800 WPM &middot; free to try</p>
     </div>
   </section>
 
@@ -158,7 +174,7 @@
           </svg>
         </div>
         <h3 class="feature-title">Turbocharge Speeds</h3>
-        <p class="feature-desc">Go from ~250 WPM to 600+ WPM with practice. Our RSVP engine highlights the optimal letter to lock your eyes in place.</p>
+        <p class="feature-desc">Go from ~250 WPM toward faster, steadier reading with practice. Our RSVP engine highlights the optimal letter to lock your eyes in place.</p>
       </div>
 
       <div class="feature-card">
@@ -222,7 +238,7 @@
           <a href="guides/">All guides</a>
         </div>
       </div>
-      <dl class="quick-facts">
+      <dl id="faq" class="quick-facts">
         <div>
           <dt>What is Absorb?</dt>
           <dd>An iPhone RSVP reader that displays text one word at a time with adjustable speed and ORP highlighting.</dd>
@@ -286,5 +302,6 @@
     </div>
   </footer>
 
+  <script src="js/app.js"></script>
 </body>
 </html>

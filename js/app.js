@@ -1,122 +1,174 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const demoText = "Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading, but it had no pictures or conversations in it, 'and what is the use of a book,' thought Alice 'without pictures or conversation?'".split(' ');
-  
-  const wordDisplay = document.getElementById('rsvp-word');
-  const progressBar = document.getElementById('rsvp-progress');
-  const playBtn = document.getElementById('play-btn');
-  const resetBtn = document.getElementById('reset-btn');
+  const defaultDemoText = [
+    'Tonight,',
+    'a',
+    'moonlit',
+    'accountant',
+    'adjusted',
+    'his',
+    'velvet',
+    'cape.',
+    'The',
+    'numbers',
+    'are',
+    'alive,',
+    'whispered',
+    'June,',
+    'and',
+    'they',
+    'demand',
+    'snacks.',
+    'A',
+    'neon',
+    'toaster',
+    'blinked',
+    'twice,',
+    'the',
+    'elevator',
+    'sighed,',
+    'and',
+    'everyone',
+    'agreed',
+    'the',
+    'sequel',
+    'needed',
+    'more',
+    'spreadsheets.'
+  ];
 
-  if (!wordDisplay || !progressBar || !playBtn || !resetBtn) return;
+  const wordDisplay = document.getElementById('rsvp-word');
+  const playBtn = document.getElementById('play-btn');
+  const speedSlider = document.getElementById('speed-slider');
+  const wpmLabel = document.getElementById('wpm-label');
+  const readerPanel = wordDisplay?.closest('.hero-visual');
+
+  if (!wordDisplay || !playBtn || !speedSlider || !wpmLabel || !readerPanel) return;
+
+  const customDemoText = wordDisplay.dataset.demoText || readerPanel.dataset.demoText || '';
+  const demoText = customDemoText.trim().split(/\s+/).filter(Boolean);
+  const words = demoText.length ? demoText : defaultDemoText;
 
   let currentIndex = 0;
-  let isPlaying = false;
+  let isPlaying = true;
   let timerId = null;
-  const baseWpm = 350;
-  const msPerWord = Math.floor(60000 / baseWpm);
+  let currentWpm = Number(speedSlider.value) || 450;
 
-  // Helper to find Optimal Recognition Point (ORP)
   function getORPIndex(length) {
     if (length <= 1) return 0;
-    if (length >= 2 && length <= 5) return 1;
-    if (length >= 6 && length <= 9) return 2;
-    if (length >= 10 && length <= 13) return 3;
-    return 4; // for 14+ letter words
+    if (length <= 5) return 1;
+    if (length <= 9) return 2;
+    if (length <= 13) return 3;
+    return 4;
+  }
+
+  function escapeHTML(value) {
+    return value.replace(/[&<>"']/g, (character) => ({
+      '&': '&amp;',
+      '<': '&lt;',
+      '>': '&gt;',
+      '"': '&quot;',
+      "'": '&#39;'
+    }[character]));
   }
 
   function renderWord(word) {
-    if (!word) return;
-    const cleanWord = word.replace(/[.,:;'"“”‘’]/g, '');
-    const actualLength = cleanWord.length;
-    if (actualLength === 0) {
-      wordDisplay.innerHTML = word;
+    const lettersOnly = word.replace(/[^a-zA-Z]/g, '');
+    if (!lettersOnly) {
+      wordDisplay.textContent = word;
+      wordDisplay.style.setProperty('--reader-offset', '0px');
       return;
     }
 
-    // Rough approximation to center the pivot visually.
-    const pivotIndex = getORPIndex(actualLength);
-    
-    // We need to map the pivot back to the original word including punctuation
-    let charArr = word.split('');
+    const pivotIndex = getORPIndex(lettersOnly.length);
+    const characters = word.split('');
     let letterCount = 0;
     let actualPivot = 0;
 
-    for (let i = 0; i < charArr.length; i++) {
-      if (/[a-zA-Z]/.test(charArr[i])) {
+    for (let index = 0; index < characters.length; index++) {
+      if (/[a-zA-Z]/.test(characters[index])) {
         if (letterCount === pivotIndex) {
-          actualPivot = i;
+          actualPivot = index;
           break;
         }
         letterCount++;
       }
     }
 
-    const before = charArr.slice(0, actualPivot).join('');
-    const pivot = charArr[actualPivot] || '';
-    const after = charArr.slice(actualPivot + 1).join('');
+    const before = escapeHTML(characters.slice(0, actualPivot).join(''));
+    const pivot = escapeHTML(characters[actualPivot] || '');
+    const after = escapeHTML(characters.slice(actualPivot + 1).join(''));
 
-    // To align the pivot center, we could use CSS grid/flex, but simple span coloring is okay
-    wordDisplay.innerHTML = `${before}<span class="rsvp-pivot">${pivot}</span>${after}`;
+    wordDisplay.innerHTML = `
+      <span class="reader-before">${before}</span>
+      <span class="reader-pivot">${pivot}</span>
+      <span class="reader-after">${after}</span>
+    `;
+    alignPivotToCenter();
   }
 
-  function step() {
-    if (currentIndex >= demoText.length) {
-      isPlaying = false;
-      updatePlayBtnUI();
-      return;
-    }
+  function alignPivotToCenter() {
+    const pivot = wordDisplay.querySelector('.reader-pivot');
+    if (!pivot) return;
 
-    const currentWord = demoText[currentIndex];
-    renderWord(currentWord);
-    
-    const progressPercent = ((currentIndex + 1) / demoText.length) * 100;
-    progressBar.style.width = `${progressPercent}%`;
+    wordDisplay.style.setProperty('--reader-offset', '0px');
 
-    // Calculate delay (pause slightly longer on punctuation)
-    let currentDelay = msPerWord;
-    if (/[.,:;]/.test(currentWord)) {
-      currentDelay *= 2;
-    }
+    const panelRect = readerPanel.getBoundingClientRect();
+    const pivotRect = pivot.getBoundingClientRect();
+    const panelCenter = panelRect.left + panelRect.width / 2;
+    const pivotCenter = pivotRect.left + pivotRect.width / 2;
+    const offset = panelCenter - pivotCenter;
 
-    currentIndex++;
-
-    if (isPlaying) {
-      timerId = setTimeout(step, currentDelay);
-    }
+    wordDisplay.style.setProperty('--reader-offset', `${offset}px`);
   }
 
-  function updatePlayBtnUI() {
-    const icon = playBtn.querySelector('svg');
-    if (isPlaying) {
-      icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" d="M15.75 5.25v13.5m-7.5-13.5v13.5" />';
-    } else {
-      // Re-initialize if reached end
-      if (currentIndex >= demoText.length) {
-        currentIndex = 0;
-        progressBar.style.width = `0%`;
-      }
-      icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" d="M5.25 5.653c0-.856.917-1.398 1.667-.986l11.54 6.347a1.125 1.125 0 0 1 0 1.972l-11.54 6.347a1.125 1.125 0 0 1-1.667-.986V5.653Z" />';
-    }
+  function getDelay(word) {
+    const baseDelay = 60000 / currentWpm;
+    if (/[.!?]$/.test(word)) return baseDelay * 2.15;
+    if (/[,;:]$/.test(word)) return baseDelay * 1.55;
+    return baseDelay;
   }
+
+  function updatePlayButton() {
+    playBtn.textContent = isPlaying ? 'Pause' : 'Play';
+  }
+
+  function scheduleNext(previousWord) {
+    window.clearTimeout(timerId);
+    if (!isPlaying) return;
+    timerId = window.setTimeout(showNextWord, getDelay(previousWord));
+  }
+
+  function showNextWord() {
+    const word = words[currentIndex];
+    renderWord(word);
+    currentIndex = (currentIndex + 1) % words.length;
+    scheduleNext(word);
+  }
+
+  speedSlider.addEventListener('input', () => {
+    currentWpm = Number(speedSlider.value) || 450;
+    wpmLabel.textContent = `${currentWpm} WPM`;
+    scheduleNext(words[Math.max(currentIndex - 1, 0)]);
+  });
 
   playBtn.addEventListener('click', () => {
     isPlaying = !isPlaying;
-    updatePlayBtnUI();
+    updatePlayButton();
     if (isPlaying) {
-      step();
+      showNextWord();
     } else {
-      clearTimeout(timerId);
+      window.clearTimeout(timerId);
     }
   });
 
-  resetBtn.addEventListener('click', () => {
-    isPlaying = false;
-    clearTimeout(timerId);
-    currentIndex = 0;
-    progressBar.style.width = `0%`;
-    renderWord(demoText[0]);
-    updatePlayBtnUI();
-  });
+  window.addEventListener('resize', alignPivotToCenter);
 
-  // initial render
-  renderWord(demoText[0]);
+  if (document.fonts?.ready) {
+    document.fonts.ready.then(alignPivotToCenter);
+  }
+
+  renderWord(words[0]);
+  currentIndex = 1;
+  updatePlayButton();
+  scheduleNext(words[0]);
 });

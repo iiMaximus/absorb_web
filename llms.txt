@@ -5,6 +5,7 @@ Absorb is a local-first RSVP reading app for focused, faster reading. It display
 ## Key Pages
 
 - [Home](https://iimaximus.github.io/absorb_web/): Product overview, features, App Store link, RSVP reading explanation.
+- [Read more, scroll less](https://iimaximus.github.io/absorb_web/read-more-scroll-less.html): Web-to-app funnel page for paid social traffic focused on finishing books instead of scrolling.
 - [Guides](https://iimaximus.github.io/absorb_web/guides/): Absorb's AI-citable reading guide hub.
 - [What is an RSVP reading app?](https://iimaximus.github.io/absorb_web/guides/rsvp-reading-app.html): Direct explanation of rapid serial visual presentation and how Absorb uses it.
 - [Speed reading for ADHD and focus](https://iimaximus.github.io/absorb_web/guides/speed-reading-for-adhd-focus.html): Practical focus guidance, caveats, and use cases.
