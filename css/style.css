@@ -639,6 +639,9 @@ a {
 
 .landing-navbar {
   position: sticky;
+  width: 100%;
+  padding-right: max(24px, calc((100% - var(--container)) / 2));
+  padding-left: max(24px, calc((100% - var(--container)) / 2));
 }
 
 .landing-nav-actions {
@@ -1253,6 +1256,12 @@ footer {
 
   .navbar {
     min-height: 62px;
+  }
+
+  .funnel-page .landing-navbar {
+    width: 100%;
+    padding-right: 16px;
+    padding-left: 16px;
   }
 
   .landing-nav-actions {
