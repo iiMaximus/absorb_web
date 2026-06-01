@@ -1,10 +1,10 @@
 # Privacy Policy
 
-Last updated: May 30, 2026
+Last updated: June 1, 2026
 
 ## Overview
 
-Absorb is a local-first reading app. The app is designed to help you read public domain books and your own imported documents without creating an Absorb account.
+Absorb is a local-first reading app. The app is designed to help you read public domain books, your own imported documents, website or article text, and scanned pages without creating an Absorb account.
 
 We do not sell personal information. We do not include advertising SDKs. We do not use your reading content for advertising. Absorb uses limited product analytics and attribution tools, described below, to understand onboarding, feature usage, purchases, app performance, and which marketing links lead to app installs.
 
@@ -17,9 +17,11 @@ Absorb stores the following information locally on your device so the app can wo
 - Saved vocabulary words and definitions.
 - Downloaded public domain books and cached book files.
 - Imported book metadata, imported book text, and imported book cover images when available.
+- Imported website or article URLs, titles, metadata, and extracted text when available.
+- Scanned page images if saved by the app, extracted page text, and related scan metadata when available.
 - Purchase entitlement status cached by the purchase SDK, if purchases are enabled.
 
-Imported EPUB, TXT, and supported text-based PDF files are processed and saved locally. Absorb does not intentionally upload imported book content, saved note text, saved vocabulary words, or saved definitions to an Absorb server. Limited reading-session metadata and product usage analytics may be sent to PostHog as described below. If you choose to use online dictionary lookup, the selected word is sent to the dictionary provider described below.
+Imported EPUB, TXT, supported text-based PDF files, website text, article text, and scanned page text are processed and saved locally. Absorb does not intentionally upload imported book content, full imported website text, scanned page images, extracted scanned text, saved note text, saved vocabulary words, or saved definitions to an Absorb server. Limited reading-session metadata and product usage analytics may be sent to PostHog as described below. If you choose to use online dictionary lookup, the selected word is sent to the dictionary provider described below.
 
 Local app data may be included in device backups depending on your device and operating system settings. Deleting the app or clearing app data may remove local data from the device.
 
@@ -29,9 +31,10 @@ Absorb uses third-party services only where needed for app functionality:
 
 - Apple and Google process App Store and Google Play downloads, in-app purchases, subscriptions, refunds, diagnostics, and crash reports according to your store account, device settings, and their policies.
 - RevenueCat may process an anonymous app user ID, purchase history, product identifiers, transaction status, entitlement status, device and app information, IP address, and related technical logs so Absorb can unlock paid features, check subscription status, restore purchases, and present purchase management screens. Absorb does not receive your full payment card details.
-- PostHog may process an anonymous analytics identifier, device and app information, app lifecycle events, screen views, selected touch interaction metadata, IP address, and technical logs so Absorb can understand app usage and improve the product. Absorb sends product analytics such as onboarding progress and answers, referral/source selections, notification choices, paywall and purchase-flow events, feature usage, book import/download/remove events, reading session start/pause/completion events, reading speed, progress percentage, book type, book identifiers, titles, authors, imported file names, and word counts. Absorb does not intentionally send imported book text, saved note text, saved vocabulary words, saved definitions, or full payment card details to PostHog.
+- PostHog may process an anonymous analytics identifier, device and app information, app lifecycle events, screen views, selected touch interaction metadata, IP address, and technical logs so Absorb can understand app usage and improve the product. Absorb sends product analytics such as onboarding progress and answers, referral/source selections, notification choices, paywall and purchase-flow events, feature usage, book import/download/remove events, website import events, camera scan import events, reading session start/pause/completion events, reading speed, progress percentage, book type, book identifiers, titles, authors, imported file names, import source types, and word counts. Absorb does not intentionally send imported book text, full imported website text, scanned page images, extracted scanned text, saved note text, saved vocabulary words, saved definitions, or full payment card details to PostHog.
 - ChottuLink may process app install attribution, deep-link click attribution, link resolution events, campaign and UTM parameters, clicked short links, destination URLs, an install or attribution identifier, device and app information, IP address, and related technical logs so Absorb can understand which marketing links, including social media links, lead to app downloads and app opens. Absorb may send ChottuLink attribution events to PostHog so marketing performance can be measured in one analytics view.
 - Project Gutenberg or related public book sources may receive standard technical information, such as your IP address and user agent, when you choose to download a public domain book.
+- Websites you import may receive standard technical information, such as your IP address and user agent, when your device fetches the page or article.
 - Free Dictionary API at `api.dictionaryapi.dev` may receive the selected word and standard technical information, such as your IP address and user agent, when you choose to look up a word definition.
 
 Absorb does not use these services to track you across apps or websites owned by other companies.
@@ -66,7 +69,7 @@ ChottuLink attribution and deep-link records are retained according to the Chott
 
 ## Your choices and deletion
 
-You can remove imported books, downloaded books, saved vocabulary, and app settings from within the app where available, or by deleting the app from your device. Removing an imported book deletes Absorb's local copy, but not the original file you selected from your device.
+You can remove imported books, imported websites or articles, scanned pages, downloaded books, saved vocabulary, and app settings from within the app where available, or by deleting the app from your device. Removing an imported item deletes Absorb's local copy, but not the original file, website, or physical page.
 
 Subscriptions, refunds, and billing changes are managed through your App Store or Google Play account. You can cancel an auto-renewable subscription in your store subscription settings.
 

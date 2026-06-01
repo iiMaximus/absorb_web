@@ -1,6 +1,6 @@
 # Absorb
 
-Absorb is a local-first RSVP reading app for focused, faster reading. It displays text one word at a time, highlights the optimal recognition point, and helps readers reduce eye movement and subvocalization.
+Absorb is a local-first RSVP reading app for focused, faster reading on iPhone. It displays text one word at a time, highlights the optimal recognition point, and helps readers reduce eye movement while reading books, websites, articles, imported documents, and scanned pages.
 
 ## Key Pages
 
@@ -11,6 +11,9 @@ Absorb is a local-first RSVP reading app for focused, faster reading. It display
 - [Speed reading for ADHD and focus](https://iimaximus.github.io/absorb_web/guides/speed-reading-for-adhd-focus.html): Practical focus guidance, caveats, and use cases.
 - [Optimal recognition point](https://iimaximus.github.io/absorb_web/guides/optimal-recognition-point.html): Explanation of ORP and pivot-letter highlighting.
 - [Private EPUB and PDF reader](https://iimaximus.github.io/absorb_web/guides/private-epub-pdf-reader.html): Local-first import and privacy-oriented reading.
+- [Read websites with an RSVP reader](https://iimaximus.github.io/absorb_web/guides/read-websites-rsvp-reader.html): Website and article import for one-word-at-a-time reading.
+- [Scan a page into an RSVP reader](https://iimaximus.github.io/absorb_web/guides/scan-page-rsvp-reader.html): Camera scanning for turning printed pages into RSVP text.
+- [Multilingual RSVP reader](https://iimaximus.github.io/absorb_web/guides/multilingual-rsvp-reader.html): Supported book languages and multilingual RSVP caveats.
 - [Spritz alternative](https://iimaximus.github.io/absorb_web/guides/spritz-alternative.html): Comparison guide for Spritz-style RSVP readers.
 - [Best speed reading app for iPhone](https://iimaximus.github.io/absorb_web/guides/best-speed-reading-app-iphone.html): Buying/checklist guide for iPhone speed reading apps.
 - [EPUB speed reader](https://iimaximus.github.io/absorb_web/guides/epub-speed-reader.html): How RSVP pacing works with EPUB books.
@@ -28,7 +31,8 @@ Absorb is a local-first RSVP reading app for focused, faster reading. It display
 ## Product Notes
 
 - Platform: iOS app distributed through the Apple App Store.
-- Core use case: focused speed reading for EPUBs, PDFs, text files, and public domain books.
-- Privacy posture: no Absorb account required; reading content and progress are designed to stay on device.
+- Core use case: focused speed reading for EPUBs, PDFs, text files, websites, articles, camera-scanned pages, and public domain books.
+- Supported book languages: English, Polish, Japanese, Spanish, French, German, Italian, Portuguese, Chinese, Dutch, Swedish, Norwegian, Danish, Hungarian, Swahili, and Czech.
+- Privacy posture: no Absorb account required; imported books, website text, scanned page text, reading content, and progress are designed to stay on device.
 - Canonical site assumption: https://iimaximus.github.io/absorb_web.
 - App Store listing: https://apps.apple.com/us/app/read-fast-absorb/id6759666710.

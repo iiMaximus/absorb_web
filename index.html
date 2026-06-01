@@ -3,21 +3,21 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Absorb - RSVP Speed Reading App for iPhone</title>
-  <meta name="description" content="Absorb is a local-first RSVP speed reading app for iPhone that helps you read EPUB, PDF, and TXT books one word at a time with focused pacing and privacy." />
+  <title>Absorb - Multilingual RSVP Speed Reading App for iPhone</title>
+  <meta name="description" content="Absorb is a local-first RSVP speed reading app for iPhone that helps you read books, websites, and scanned pages one word at a time in many languages." />
   <link rel="canonical" href="https://iimaximus.github.io/absorb_web/" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
   <meta name="apple-itunes-app" content="app-id=6759666710" />
   <meta name="theme-color" content="#050505" />
   <meta property="og:type" content="website" />
   <meta property="og:site_name" content="Absorb" />
-  <meta property="og:title" content="Absorb - RSVP Speed Reading App for iPhone" />
-  <meta property="og:description" content="Read books with RSVP pacing, optimal recognition point highlighting, reading stats, and local-first privacy." />
+  <meta property="og:title" content="Absorb - Multilingual RSVP Speed Reading App for iPhone" />
+  <meta property="og:description" content="Read books, websites, and scanned pages with RSVP pacing, ORP highlighting, multilingual books, reading stats, and local-first privacy." />
   <meta property="og:url" content="https://iimaximus.github.io/absorb_web/" />
   <meta property="og:image" content="https://iimaximus.github.io/absorb_web/assets/logo.jpeg" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Absorb - RSVP Speed Reading App for iPhone" />
-  <meta name="twitter:description" content="A focused, local-first RSVP reader for EPUB, PDF, and TXT books on iPhone." />
+  <meta name="twitter:title" content="Absorb - Multilingual RSVP Speed Reading App for iPhone" />
+  <meta name="twitter:description" content="A focused, local-first RSVP reader for books, websites, scanned pages, and multilingual reading on iPhone." />
   <meta name="twitter:image" content="https://iimaximus.github.io/absorb_web/assets/logo.jpeg" />
   <link rel="icon" href="assets/icon.png" type="image/png" />
   <link rel="apple-touch-icon" href="assets/icon.png" />
@@ -54,13 +54,34 @@
         "applicationCategory": "ProductivityApplication",
         "operatingSystem": "iOS",
         "downloadUrl": "https://apps.apple.com/us/app/read-fast-absorb/id6759666710",
-        "description": "Absorb is a local-first RSVP speed reading app for iPhone that displays text one word at a time, highlights the optimal recognition point, supports imported reading files, and tracks reading progress.",
+        "description": "Absorb is a local-first RSVP speed reading app for iPhone that displays text one word at a time, highlights the optimal recognition point, supports imported books, websites, and scanned pages, offers books in many languages, and tracks reading progress.",
         "featureList": [
           "Rapid Serial Visual Presentation reading mode",
           "Optimal Recognition Point highlighting",
           "EPUB, PDF, and TXT import",
+          "Website and article import for RSVP reading",
+          "Camera scan import for turning pages into RSVP text",
+          "Multilingual books and reading support",
           "Reading speed and progress tracking",
           "Local-first reading data"
+        ],
+        "availableLanguage": [
+          "English",
+          "Polish",
+          "Japanese",
+          "Spanish",
+          "French",
+          "German",
+          "Italian",
+          "Portuguese",
+          "Chinese",
+          "Dutch",
+          "Swedish",
+          "Norwegian",
+          "Danish",
+          "Hungarian",
+          "Swahili",
+          "Czech"
         ],
         "publisher": {
           "@id": "https://iimaximus.github.io/absorb_web/#organization"
@@ -80,10 +101,26 @@
           },
           {
             "@type": "Question",
-            "name": "What file types does Absorb support?",
+            "name": "What can I import into Absorb?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Absorb supports imported EPUB, PDF, and TXT reading files, with the strongest fit for text-heavy books, articles, and documents."
+              "text": "Absorb supports imported EPUB, PDF, and TXT reading files, website or article imports, and camera scans of pages, with the strongest fit for text-heavy books, articles, and documents."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Which languages does Absorb support?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Absorb supports books and reading content in English, Polish, Japanese, Spanish, French, German, Italian, Portuguese, Chinese, Dutch, Swedish, Norwegian, Danish, Hungarian, Swahili, and Czech."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can Absorb scan a physical page?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Absorb can use the camera to scan a page and turn recognized text into a one-word-at-a-time RSVP reading session. Scan quality depends on lighting, print clarity, page angle, and text extraction quality."
             }
           },
           {
@@ -135,7 +172,7 @@
         speed of <span class="text-gradient">thought</span>.
       </h1>
       <p class="hero-subtitle">
-        Absorb is an iPhone RSVP reader that helps you focus on one word at a time, highlight the optimal recognition point, and read EPUB, PDF, and TXT books with less visual scanning.
+        Absorb is an iPhone RSVP reader for books, websites, articles, and scanned pages. Focus on one word at a time with ORP highlighting, local-first imports, and multilingual book support.
       </p>
     </div>
 
@@ -161,7 +198,7 @@
         </svg>
         Download on App Store
       </a>
-      <p>Adjustable 150-1000 WPM &middot; available on iPhone</p>
+      <p>Books, websites, and scans &middot; adjustable 150-1000 WPM &middot; iPhone</p>
     </div>
   </section>
 
@@ -177,8 +214,8 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
           </svg>
         </div>
-        <h3 class="feature-title">Turbocharge Speeds</h3>
-        <p class="feature-desc">Go from ~250 WPM toward faster, steadier reading with practice. Our RSVP engine highlights the optimal letter to lock your eyes in place.</p>
+        <h3 class="feature-title">Books, Websites, Scans</h3>
+        <p class="feature-desc">Import EPUB, PDF, and TXT files, send in a website or article, or scan a page with the camera to turn text into a focused RSVP session.</p>
       </div>
 
       <div class="feature-card">
@@ -187,8 +224,8 @@
             <path stroke-linecap="round" stroke-linejoin="round" d="M3 13.125C3 12.504 3.504 12 4.125 12h2.25c.621 0 1.125.504 1.125 1.125v6.75C7.5 20.496 6.996 21 6.375 21h-2.25A1.125 1.125 0 0 1 3 19.875v-6.75ZM9.75 8.625c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125v11.25c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V8.625ZM16.5 4.125c0-.621.504-1.125 1.125-1.125h2.25C20.496 3 21 3.504 21 4.125v15.75c0 .621-.504 1.125-1.125 1.125h-2.25a1.125 1.125 0 0 1-1.125-1.125V4.125Z" />
           </svg>
         </div>
-        <h3 class="feature-title">Track Stats</h3>
-        <p class="feature-desc">Keep your reading streak alive. Monitor your total words read, daily goals, and average WPM across all books.</p>
+        <h3 class="feature-title">Multilingual Library</h3>
+        <p class="feature-desc">Read books and text in English, Polish, Japanese, Spanish, French, German, Italian, Portuguese, Chinese, Dutch, Swedish, Norwegian, Danish, Hungarian, Swahili, and Czech.</p>
       </div>
 
       <div class="feature-card">
@@ -198,7 +235,17 @@
           </svg>
         </div>
         <h3 class="feature-title">Local-First Privacy</h3>
-        <p class="feature-desc">No Absorb account required. Imported EPUB, PDF, and TXT reading content is processed locally on your device.</p>
+        <p class="feature-desc">No Absorb account required. Imported books, website text, scanned page text, reading progress, and preferences are designed for on-device reading.</p>
+      </div>
+    </div>
+    <div class="support-strip" aria-label="Supported import sources and book languages">
+      <div>
+        <strong>Import sources</strong>
+        <span>EPUB, PDF, TXT, websites, articles, and camera scans.</span>
+      </div>
+      <div>
+        <strong>Book languages</strong>
+        <span>English, Polish, Japanese, Spanish, French, German, Italian, Portuguese, Chinese, Dutch, Swedish, Norwegian, Danish, Hungarian, Swahili, and Czech.</span>
       </div>
     </div>
   </section>
@@ -212,8 +259,8 @@
     <div class="steps-grid">
       <div class="step-card">
         <div class="step-number">1</div>
-        <h3 class="step-title">Import Your Books</h3>
-        <p class="feature-desc">Load EPUB, PDF, or TXT reading files directly into Absorb. Your reading content and progress are designed to stay on your device.</p>
+        <h3 class="step-title">Import Your Reading</h3>
+        <p class="feature-desc">Load books, documents, websites, articles, or scanned pages directly into Absorb. Your reading content and progress are designed to stay on your device.</p>
       </div>
       <div class="step-card">
         <div class="step-number">2</div>
@@ -233,12 +280,14 @@
       <div class="resource-copy">
         <span class="learn-kicker">Guides</span>
         <h2>Details when you want them.</h2>
-        <p>Keep the landing page simple; use the guides when you want a deeper explanation of RSVP reading, privacy, focus, or app comparisons.</p>
+        <p>Keep the landing page simple; use the guides when you want a deeper explanation of RSVP reading, website imports, camera scans, multilingual reading, privacy, focus, or app comparisons.</p>
         <div class="resource-links">
           <a href="guides/rsvp-reading-app.html">RSVP reading app guide</a>
+          <a href="guides/read-websites-rsvp-reader.html">Read websites with RSVP</a>
+          <a href="guides/scan-page-rsvp-reader.html">Scan pages into RSVP text</a>
+          <a href="guides/multilingual-rsvp-reader.html">Multilingual RSVP reader</a>
           <a href="guides/private-epub-pdf-reader.html">Private EPUB and PDF reading</a>
           <a href="guides/speed-reading-for-adhd-focus.html">Focus and ADHD reading guide</a>
-          <a href="guides/spritz-alternative.html">Spritz-style alternative</a>
           <a href="guides/">All guides</a>
         </div>
       </div>
@@ -248,12 +297,16 @@
           <dd>An iPhone RSVP reader that displays text one word at a time with adjustable speed and ORP highlighting.</dd>
         </div>
         <div>
-          <dt>What files work?</dt>
-          <dd>EPUB, PDF, and TXT reading files, especially text-heavy books, articles, and documents.</dd>
+          <dt>What can I import?</dt>
+          <dd>EPUB, PDF, TXT, websites, articles, and camera-scanned pages, especially when the text extracts cleanly.</dd>
+        </div>
+        <div>
+          <dt>Which languages?</dt>
+          <dd>Books and reading content are available in English, Polish, Japanese, Spanish, French, German, Italian, Portuguese, Chinese, Dutch, Swedish, Norwegian, Danish, Hungarian, Swahili, and Czech.</dd>
         </div>
         <div>
           <dt>Is it private?</dt>
-          <dd>Absorb is local-first, with imported reading content and progress designed to stay on device.</dd>
+          <dd>Absorb is local-first, with imported books, website text, scans, and progress designed to stay on device.</dd>
         </div>
         <div>
           <dt>Is it Spritz-style?</dt>

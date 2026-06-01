@@ -430,6 +430,41 @@ a {
   gap: 18px;
 }
 
+.support-strip {
+  display: grid;
+  grid-template-columns: 0.68fr 1.32fr;
+  gap: 14px;
+  margin-top: 18px;
+}
+
+.support-strip div {
+  min-height: 118px;
+  padding: 22px 24px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: rgba(247, 242, 233, 0.032);
+}
+
+.support-strip strong,
+.language-list strong {
+  display: block;
+  color: var(--ink);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.support-strip span,
+.language-list span {
+  display: block;
+  margin-top: 10px;
+  color: var(--ink-muted);
+  font-size: 0.98rem;
+  line-height: 1.7;
+}
+
 .feature-card,
 .step-card,
 .learn-card,
@@ -1137,6 +1172,19 @@ a {
   background: var(--paper-soft);
 }
 
+.language-list {
+  display: grid;
+  gap: 14px;
+  margin: 30px 0;
+}
+
+.language-list div {
+  padding: 18px 20px;
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  background: var(--paper-soft);
+}
+
 .press-asset {
   margin: 26px 0;
 }
@@ -1208,6 +1256,7 @@ footer {
 @media (max-width: 1024px) {
   .features-grid,
   .steps-grid,
+  .support-strip,
   .press-grid,
   .funnel-proof-strip,
   .pain-grid {

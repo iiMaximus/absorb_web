@@ -1,6 +1,6 @@
 # Terms of Service
 
-Last updated: May 30, 2026
+Last updated: June 1, 2026
 
 ## Agreement
 
@@ -10,9 +10,9 @@ These terms apply in addition to Apple's standard terms for apps distributed thr
 
 ## Use of the app
 
-Absorb provides reading tools, including focused reading modes, reading preferences, progress tracking, vocabulary saving, public domain book access, and local document import.
+Absorb provides reading tools, including focused reading modes, reading preferences, progress tracking, vocabulary saving, public domain book access, local document import, website or article import, and camera scan import.
 
-You are responsible for the files you import and for making sure you have the right to store and read them in the app. Do not use Absorb to violate copyright, trademark, privacy, publicity, or other rights.
+You are responsible for the files, websites, articles, and scanned pages you import and for making sure you have the right to store and read them in the app. Do not use Absorb to violate copyright, trademark, privacy, publicity, access-control, or other rights.
 
 ## Analytics and product improvement
 
@@ -30,7 +30,7 @@ Third-party platforms, websites, and social media services that show or distribu
 
 Some books may come from Project Gutenberg or other public domain sources. Those works may be subject to their own license notices, trademark terms, or regional copyright rules.
 
-Absorb does not guarantee that any particular public domain work is free to use in every country. You are responsible for complying with the laws that apply to you.
+Imported websites, articles, documents, and scans may be governed by the source publisher's terms, copyright notices, or access rules. Absorb does not guarantee that any particular public domain work, web page, or scanned page is free to use in every country. You are responsible for complying with the laws that apply to you.
 
 ## Purchases, lifetime access, and subscriptions
 
@@ -54,7 +54,7 @@ Absorb is a reading and productivity tool. It does not provide medical, educatio
 
 ## Acceptable use
 
-Do not misuse the app, interfere with its operation, reverse engineer paid access controls, attempt to bypass App Store purchase systems, use the app to violate intellectual property rights, or use the app in a way that violates applicable law.
+Do not misuse the app, interfere with its operation, reverse engineer paid access controls, attempt to bypass App Store purchase systems, use website import to bypass paywalls or access restrictions, use the app to violate intellectual property rights, or use the app in a way that violates applicable law.
 
 ## Availability and changes
 
