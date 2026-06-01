@@ -29,12 +29,12 @@ Use natural anchors. Do not force exact-match links everywhere.
 
 ## Primary Link Targets
 
-- Homepage: `https://iimaximus.github.io/absorb_web/`
-- Guides hub: `https://iimaximus.github.io/absorb_web/guides/`
-- RSVP explainer: `https://iimaximus.github.io/absorb_web/guides/rsvp-reading-app.html`
-- Focus/ADHD guide: `https://iimaximus.github.io/absorb_web/guides/speed-reading-for-adhd-focus.html`
-- Privacy guide: `https://iimaximus.github.io/absorb_web/guides/private-epub-pdf-reader.html`
-- Press kit: `https://iimaximus.github.io/absorb_web/press/`
+- Homepage: `https://absorb-app.com/`
+- Guides hub: `https://absorb-app.com/guides/`
+- RSVP explainer: `https://absorb-app.com/guides/rsvp-reading-app.html`
+- Focus/ADHD guide: `https://absorb-app.com/guides/speed-reading-for-adhd-focus.html`
+- Privacy guide: `https://absorb-app.com/guides/private-epub-pdf-reader.html`
+- Press kit: `https://absorb-app.com/press/`
 - App Store: `https://apps.apple.com/us/app/read-fast-absorb/id6759666710`
 
 ## Weekly Operating Rhythm

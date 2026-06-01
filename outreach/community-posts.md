@@ -11,7 +11,7 @@ The motivation was simple: normal pages make some readers lose their place const
 It is not a magic comprehension hack, and it is not meant to replace deep reading or annotation. It is best for focused reading sessions and speed practice with plain text.
 
 App Store: https://apps.apple.com/us/app/read-fast-absorb/id6759666710
-RSVP explainer: https://iimaximus.github.io/absorb_web/guides/rsvp-reading-app.html
+RSVP explainer: https://absorb-app.com/guides/rsvp-reading-app.html
 
 I would love feedback from people who read a lot on iPhone.
 
@@ -21,7 +21,7 @@ One option is RSVP reading, where words appear one at a time at a fixed pace. It
 
 I built Absorb around this idea for iPhone: EPUB/PDF/TXT import, website/article import, camera scans, adjustable WPM, multilingual books, and optimal recognition point highlighting.
 
-Guide: https://iimaximus.github.io/absorb_web/guides/rsvp-reading-app.html
+Guide: https://absorb-app.com/guides/rsvp-reading-app.html
 
 ## Answer To "Any Private Reading Apps?"
 
@@ -29,4 +29,4 @@ For private reading, I would look for whether imported files are processed local
 
 Absorb is a local-first RSVP reader for iPhone. Imported EPUB, PDF, TXT, website, article, and scanned page text is designed to stay on the device, with no Absorb account required for core reading.
 
-Privacy guide: https://iimaximus.github.io/absorb_web/guides/private-epub-pdf-reader.html
+Privacy guide: https://absorb-app.com/guides/private-epub-pdf-reader.html

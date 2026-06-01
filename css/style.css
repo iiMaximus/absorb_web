@@ -66,10 +66,10 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: min(var(--container), calc(100% - 48px));
+  width: 100%;
   min-height: 68px;
-  margin: 0 auto;
-  padding: 16px 0;
+  margin: 0;
+  padding: 16px max(48px, calc((100% - var(--container)) / 2));
   border-bottom: 1px solid var(--line);
   background: rgba(9, 9, 11, 0.76);
   backdrop-filter: blur(18px);
@@ -676,8 +676,8 @@ a {
 .landing-navbar {
   position: sticky;
   width: 100%;
-  padding-right: max(24px, calc((100% - var(--container)) / 2));
-  padding-left: max(24px, calc((100% - var(--container)) / 2));
+  padding-right: max(48px, calc((100% - var(--container)) / 2));
+  padding-left: max(48px, calc((100% - var(--container)) / 2));
 }
 
 .landing-nav-actions {
@@ -1288,7 +1288,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-  .navbar,
   .hero,
   .features,
   .how-it-works,
@@ -1305,13 +1304,16 @@ footer {
   }
 
   .navbar {
+    width: 100%;
     min-height: 62px;
+    padding-right: 24px;
+    padding-left: 24px;
   }
 
   .funnel-page .landing-navbar {
     width: 100%;
-    padding-right: 16px;
-    padding-left: 16px;
+    padding-right: 24px;
+    padding-left: 24px;
   }
 
   .landing-nav-actions {
@@ -1472,6 +1474,12 @@ footer {
 }
 
 @media (max-width: 420px) {
+  .navbar,
+  .funnel-page .landing-navbar {
+    padding-right: 16px;
+    padding-left: 16px;
+  }
+
   .funnel-title {
     font-size: 3.35rem;
   }

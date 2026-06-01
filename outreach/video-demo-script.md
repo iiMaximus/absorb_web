@@ -23,8 +23,8 @@ Description:
 Absorb is an iPhone RSVP speed reading app for focused reading sessions. It supports EPUB, PDF, TXT, website, article, and camera scan import, includes books in many languages, highlights the optimal recognition point, and is designed around local-first reading privacy.
 
 Links:
-https://iimaximus.github.io/absorb_web/
-https://iimaximus.github.io/absorb_web/guides/rsvp-reading-app.html
+https://absorb-app.com/
+https://absorb-app.com/guides/rsvp-reading-app.html
 https://apps.apple.com/us/app/read-fast-absorb/id6759666710
 
 Suggested tags:

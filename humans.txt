@@ -3,5 +3,5 @@ Product: Absorb
 Site: Static marketing and support site
 
 /* NOTES */
-Crawler and canonical files currently assume GitHub Pages at https://iimaximus.github.io/absorb_web.
+Crawler and canonical files currently assume GitHub Pages at https://absorb-app.com.
 If Absorb launches on a custom domain, update canonical tags, sitemap.xml, robots.txt, and llms.txt.

@@ -19,4 +19,4 @@ Allow: /
 Disallow: /PRIVACY_POLICY.md
 Disallow: /TERMS_OF_SERVICE.md
 
-Sitemap: https://iimaximus.github.io/absorb_web/sitemap.xml
+Sitemap: https://absorb-app.com/sitemap.xml
